@@ -4,5 +4,36 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("../img/ETsafe.png");
+    background-image: url("../img/v1016-b-09.jpg");
 }
+
+.sombras{
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    -ms-transform: translate(-50%, 50%);
+    transform: translate(-50%, 50%);
+    padding: 20px;
+    width: 80%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    margin: auto;
+}
+
+.sombras hr{
+    border-top-width: 1px;
+    border-top-color: white;
+    border-top-style: solid;
+}
+.sombras h1{
+    font-size: 8vw;
+    margin-bottom: 10px;
+
+}
+
+
+
+
+
+
