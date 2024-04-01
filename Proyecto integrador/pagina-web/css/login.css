@@ -9,15 +9,15 @@
 
 .sombras{
     position: absolute;
-    left: 50%;
-    top: 10%;
+    left: 100px;
+    top: 100px;
     -ms-transform: translate(-50%, 50%);
     transform: translate(-50%, 50%);
     padding: 20px;
     width: 80%;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: white;
+    background-color: rgba(250, 250, 250, 0.4);
+    color: black;
     margin: auto;
 }
 
@@ -29,11 +29,9 @@
 .sombras h1{
     font-size: 8vw;
     margin-bottom: 10px;
-
 }
 
-
-
-
-
-
+.sombras p{
+    font-size: 4vw;
+    margin-bottom: 10px;
+}
