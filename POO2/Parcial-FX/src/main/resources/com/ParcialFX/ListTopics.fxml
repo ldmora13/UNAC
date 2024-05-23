@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ParcialFX.Controllers.ControllerListTopics">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="154.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="610.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.49074074625968933" blue="0.8217592835426331" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label alignment="CENTER" layoutX="271.0" layoutY="40.0" prefHeight="73.0" prefWidth="254.0" text="Discusiónes" textAlignment="CENTER">
+         <font>
+            <Font name="Agency FB" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="154.0" fitWidth="154.0" layoutX="48.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ETsafe.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a1feff" height="38.0" layoutX="339.0" layoutY="482.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="206.0" />
+      <Label layoutX="440.0" layoutY="489.0" text="Regresar" textAlignment="CENTER">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="38.0" fitWidth="29.0" layoutX="367.0" layoutY="487.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/regresar.png" />
+         </image>
+      </ImageView>
+      <Rectangle fx:id="btnRegresar" arcHeight="5.0" arcWidth="5.0" fill="#a1feff" height="38.0" layoutX="337.0" layoutY="482.0" onMouseClicked="#regresar" opacity="0.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="206.0" />
+      <Label fx:id="lblTxt" alignment="TOP_CENTER" layoutX="65.0" layoutY="190.0" prefHeight="167.0" prefWidth="503.0" wrapText="true">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a1feff" height="38.0" layoutX="338.0" layoutY="390.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="206.0" />
+      <Label layoutX="439.0" layoutY="397.0" text="Cargar" textAlignment="CENTER">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="38.0" fitWidth="29.0" layoutX="366.0" layoutY="395.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+         <image>
+            <Image url="@img/regresar.png" />
+         </image>
+      </ImageView>
+      <Rectangle fx:id="btnCargar" arcHeight="5.0" arcWidth="5.0" fill="#a1feff" height="38.0" layoutX="336.0" layoutY="390.0" onMouseClicked="#cargar" opacity="0.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="206.0" />
+   </children>
+</AnchorPane>

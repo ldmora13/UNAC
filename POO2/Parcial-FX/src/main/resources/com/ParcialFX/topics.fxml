@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ParcialFX.Controllers.ControllerTopics">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="615.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="254.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.49074074625968933" blue="0.8217592835426331" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <ImageView fitHeight="115.0" fitWidth="167.0" layoutX="68.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ETsafe.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="-1.0" layoutY="116.0" prefHeight="73.0" prefWidth="254.0" text="Foro de discución" textAlignment="CENTER">
+         <font>
+            <Font name="Agency FB" size="30.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a1feff" height="38.0" layoutX="24.0" layoutY="481.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="206.0" />
+      <Label layoutX="125.0" layoutY="488.0" text="Regresar" textAlignment="CENTER">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="38.0" fitWidth="29.0" layoutX="55.0" layoutY="485.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/regresar.png" />
+         </image>
+      </ImageView>
+      <Rectangle fx:id="btnRegresar" arcHeight="5.0" arcWidth="5.0" fill="#a1feff" height="38.0" layoutX="22.0" layoutY="481.0" onMouseClicked="#regresar" opacity="0.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="206.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a1feff" height="38.0" layoutX="25.0" layoutY="270.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="206.0" />
+      <Label alignment="TOP_LEFT" layoutX="71.0" layoutY="277.0" text="Crear nueva discución">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="38.0" fitWidth="29.0" layoutX="32.0" layoutY="274.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/registrar.png" />
+         </image>
+      </ImageView>
+      <Rectangle fx:id="btnCrear" arcHeight="5.0" arcWidth="5.0" fill="#a1feff" height="38.0" layoutX="25.0" layoutY="270.0" onMouseClicked="#crear" opacity="0.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="206.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a1feff" height="38.0" layoutX="25.0" layoutY="327.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="206.0" />
+      <Label alignment="TOP_LEFT" layoutX="92.0" layoutY="335.0" text="Ver discuciónes">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="38.0" fitWidth="29.0" layoutX="32.0" layoutY="332.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/listar.png" />
+         </image>
+      </ImageView>
+      <Rectangle fx:id="btnListar" arcHeight="5.0" arcWidth="5.0" fill="#a1feff" height="38.0" layoutX="25.0" layoutY="328.0" onMouseClicked="#listar" opacity="0.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="206.0" />
+      <Label fx:id="lblTxt" layoutX="292.0" layoutY="144.0" onMouseEntered="#bienvenida" prefHeight="131.0" prefWidth="254.0">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

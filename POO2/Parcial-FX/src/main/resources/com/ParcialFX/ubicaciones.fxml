@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ParcialFX.Controllers.ControllerUbi">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="162.0" layoutY="-2.0" stroke="BLACK" strokeType="INSIDE" width="615.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.4901960790157318" blue="0.8235294222831726" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <ImageView fitHeight="162.0" fitWidth="158.0" layoutX="35.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ETsafe.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="229.0" layoutY="43.0" prefHeight="73.0" prefWidth="294.0" text="Centros de salud" textAlignment="CENTER">
+         <font>
+            <Font name="Agency FB" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="municipioTxt" layoutX="66.0" layoutY="200.0" prefHeight="38.0" prefWidth="206.0" promptText="Municipio">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </TextField>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a1feff" height="38.0" layoutX="334.0" layoutY="483.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="206.0" />
+      <Label layoutX="435.0" layoutY="490.0" text="Regresar" textAlignment="CENTER">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="38.0" fitWidth="29.0" layoutX="365.0" layoutY="487.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/regresar.png" />
+         </image>
+      </ImageView>
+      <Rectangle fx:id="btnRegresar" arcHeight="5.0" arcWidth="5.0" fill="#a1feff" height="38.0" layoutX="332.0" layoutY="483.0" onMouseClicked="#regresar" opacity="0.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="206.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a1feff" height="38.0" layoutX="68.0" layoutY="483.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="206.0" />
+      <Label layoutX="169.0" layoutY="490.0" text="Buscar" textAlignment="CENTER">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="38.0" fitWidth="29.0" layoutX="99.0" layoutY="487.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/buscar.png" />
+         </image>
+      </ImageView>
+      <Rectangle fx:id="btnBuscar" arcHeight="5.0" arcWidth="5.0" fill="#a1feff" height="38.0" layoutX="66.0" layoutY="483.0" onMouseClicked="#buscar" opacity="0.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="206.0" />
+      <Label fx:id="lblRegion" layoutX="66.0" layoutY="270.0" prefHeight="17.0" prefWidth="480.0" wrapText="true">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblMunicipio" layoutX="66.0" layoutY="300.0" prefHeight="17.0" prefWidth="480.0" wrapText="true">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblHospital" layoutX="66.0" layoutY="330.0" prefHeight="17.0" prefWidth="480.0" wrapText="true">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDireccion" layoutX="66.0" layoutY="360.0" prefHeight="17.0" prefWidth="480.0" wrapText="true">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTelefono" layoutX="66.0" layoutY="393.0" prefHeight="17.0" prefWidth="480.0" wrapText="true">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTxt" alignment="TOP_CENTER" layoutX="295.0" layoutY="200.0" prefHeight="38.0" prefWidth="266.0">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

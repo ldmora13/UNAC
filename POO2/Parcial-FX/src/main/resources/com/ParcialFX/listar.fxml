@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ParcialFX.Controllers.ControllerListar">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="150.0" stroke="BLACK" strokeType="INSIDE" width="605.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.4901960790157318" blue="0.8235294222831726" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="32.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ETsafe.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="223.0" layoutY="39.0" prefHeight="73.0" prefWidth="294.0" text="Listado de enfermedades" textAlignment="CENTER">
+         <font>
+            <Font name="Agency FB" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTxt" alignment="TOP_CENTER" layoutX="321.0" layoutY="219.0" prefHeight="150.0" prefWidth="206.0" textAlignment="CENTER">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableEnfermedades" layoutX="46.0" layoutY="219.0" prefHeight="279.0" prefWidth="201.0">
+        <columns>
+          <TableColumn fx:id="ColumnaEnfermedades" prefWidth="200.0" text="Enfermedades" />
+        </columns>
+         <effect>
+            <DropShadow />
+         </effect>
+      </TableView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a1feff" height="38.0" layoutX="324.0" layoutY="473.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="206.0" />
+      <Label layoutX="425.0" layoutY="480.0" text="Regresar" textAlignment="CENTER">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="38.0" fitWidth="29.0" layoutX="355.0" layoutY="477.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/regresar.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a1feff" height="38.0" layoutX="324.0" layoutY="377.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="206.0" />
+      <Label layoutX="432.0" layoutY="384.0" text="Cargar" textAlignment="CENTER">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="38.0" fitWidth="29.0" layoutX="353.0" layoutY="382.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+         <image>
+            <Image url="@img/regresar.png" />
+         </image>
+      </ImageView>
+      <Rectangle fx:id="btnCargar" arcHeight="5.0" arcWidth="5.0" fill="#a1feff" height="38.0" layoutX="324.0" layoutY="378.0" onMouseClicked="#cargarEnfermedades" opacity="0.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="206.0" />
+      <Rectangle fx:id="btnRegresar" arcHeight="5.0" arcWidth="5.0" fill="#a1feff" height="38.0" layoutX="322.0" layoutY="473.0" onMouseClicked="#regresar" opacity="0.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="206.0" />
+   </children>
+</AnchorPane>

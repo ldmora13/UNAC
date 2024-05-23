@@ -4,7 +4,7 @@ public class inicioAdmin {
         saludar("hola");
     }
     static void saludar(String usuario){
-        System.out.println("Hola Admin "+usuario);
+        System.out.println("Hola Admin "+ usuario);
         String ingreso = LocalDate.now()+"-"+LocalTime.now()+"-"+usuario;
         escribirTxt.escribir(ingreso);
     }

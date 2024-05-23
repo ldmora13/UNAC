@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ParcialFX.Controllers.ControllerRegistrar">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="150.0" stroke="BLACK" strokeType="INSIDE" width="600.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.49074074625968933" blue="0.8217592835426331" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="31.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ETsafe.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="218.0" layoutY="46.0" prefHeight="73.0" prefWidth="294.0" text="Registro de enfermedades" textAlignment="CENTER">
+         <font>
+            <Font name="Agency FB" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="enfermedadTxt" layoutX="87.0" layoutY="253.0" prefHeight="31.0" prefWidth="243.0" promptText="Enfermedad" />
+      <Label fx:id="lblTxt" alignment="TOP_CENTER" layoutX="87.0" layoutY="303.0" prefHeight="73.0" prefWidth="243.0" textAlignment="CENTER">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a1feff" height="38.0" layoutX="182.0" layoutY="471.0" onMouseClicked="#regresar" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="206.0" />
+      <Label layoutX="283.0" layoutY="478.0" onMouseClicked="#regresar" text="Regresar" textAlignment="CENTER">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="38.0" fitWidth="29.0" layoutX="213.0" layoutY="475.0" onMouseClicked="#regresar" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/regresar.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a1feff" height="38.0" layoutX="365.0" layoutY="215.0" onMouseClicked="#registrar" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="206.0" />
+      <Label layoutX="438.0" layoutY="222.0" onMouseClicked="#registrar" text="Registrar" textAlignment="CENTER">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a1feff" height="38.0" layoutX="365.0" layoutY="284.0" onMouseClicked="#limpiar" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="206.0" />
+      <Label layoutX="445.0" layoutY="291.0" onMouseClicked="#limpiar" text="Limpiar" textAlignment="CENTER">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="btnRegresar" arcHeight="5.0" arcWidth="5.0" fill="#a1feff" height="38.0" layoutX="180.0" layoutY="471.0" onMouseClicked="#regresar" opacity="0.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="206.0" />
+      <Rectangle fx:id="btnRegistrar" arcHeight="5.0" arcWidth="5.0" fill="#a1feff" height="38.0" layoutX="365.0" layoutY="215.0" onMouseClicked="#registrar" opacity="0.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="206.0" />
+      <Rectangle fx:id="btnLimpiar" arcHeight="5.0" arcWidth="5.0" fill="#a1feff" height="38.0" layoutX="366.0" layoutY="281.0" onMouseClicked="#limpiar" opacity="0.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="206.0" />
+   </children>
+</AnchorPane>

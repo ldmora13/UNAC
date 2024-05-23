@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ParcialFX.Controllers.ControllerNewTopic">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="143.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="600.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.49074074625968933" blue="0.8217592835426331" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label alignment="CENTER" layoutX="262.0" layoutY="35.0" prefHeight="73.0" prefWidth="254.0" text="Crear nueva discusión" textAlignment="CENTER">
+         <font>
+            <Font name="Agency FB" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="143.0" fitWidth="143.0" layoutX="52.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ETsafe.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="tituloTxt" layoutX="49.0" layoutY="262.0" prefHeight="38.0" prefWidth="219.0" promptText="Titulo del topic">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </TextField>
+      <TextArea fx:id="discusionTxt" layoutX="49.0" layoutY="310.0" prefHeight="200.0" prefWidth="219.0" promptText="Discusión">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </TextArea>
+      <TextField fx:id="usuarioTxt" layoutX="49.0" layoutY="187.0" prefHeight="38.0" prefWidth="219.0" promptText="Autor">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </TextField>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a1feff" height="38.0" layoutX="329.0" layoutY="472.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="206.0" />
+      <Label layoutX="430.0" layoutY="479.0" text="Regresar" textAlignment="CENTER">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="38.0" fitWidth="29.0" layoutX="357.0" layoutY="477.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/regresar.png" />
+         </image>
+      </ImageView>
+      <Rectangle fx:id="btnRegresar" arcHeight="5.0" arcWidth="5.0" fill="#a1feff" height="38.0" layoutX="327.0" layoutY="472.0" onMouseClicked="#regresar" opacity="0.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="206.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a1feff" height="38.0" layoutX="331.0" layoutY="310.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="206.0" />
+      <Label layoutX="432.0" layoutY="317.0" text="Guardar" textAlignment="CENTER">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="29.0" fitWidth="23.0" layoutX="360.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/guardar.png" />
+         </image>
+      </ImageView>
+      <Rectangle fx:id="btnGuardar" arcHeight="5.0" arcWidth="5.0" fill="#a1feff" height="38.0" layoutX="331.0" layoutY="310.0" onMouseClicked="#guardar" opacity="0.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="206.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a1feff" height="38.0" layoutX="331.0" layoutY="372.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="206.0" />
+      <Label layoutX="432.0" layoutY="379.0" text="Limpiar" textAlignment="CENTER">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="29.0" fitWidth="29.0" layoutX="357.0" layoutY="377.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/limpiar.png" />
+         </image>
+      </ImageView>
+      <Rectangle fx:id="btnLimpiar" arcHeight="5.0" arcWidth="5.0" fill="#a1feff" height="38.0" layoutX="331.0" layoutY="372.0" onMouseClicked="#limpiar" opacity="0.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="206.0" />
+      <Label fx:id="lblTxt" alignment="TOP_CENTER" layoutX="331.0" layoutY="182.0" prefHeight="86.0" prefWidth="206.0" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

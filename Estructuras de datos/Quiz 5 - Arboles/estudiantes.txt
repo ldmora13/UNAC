@@ -1,0 +1,37 @@
+Carné       Nombre                         Email
+20231019390 AGUDELO SUAZA SEBASTIAN        sebastian.agudelos@unac.edu.co
+20222008890 ALVAREZ SANCHEZ LUIS JAVIER    luisj.alvarezs@unac.edu.co
+20222024590 ANAYA GONZALEZ WILLIAM ANDRES  williama.anayag@unac.edu.co
+20222034690 ARIAS JARA FABIAN ANDRES       fabian.ariasj@unac.edu.co
+20231023890 BARRERO CARMONA WILLIAM ANDRÉS williama.barreroc@unac.edu.co
+20231041290 BOJATO RESTREPO ANA SABELI     ana.bojator@unac.edu.co
+20231026990 CABALLERO DE ORTA ARIEL DAVID  arield.caballerod@unac.edu.co
+20231035690 CABANA TREJOS DANIEL ANDRES    daniela.cabanat@unac.edu.co
+20231017590 CACERES FLOREZ SARAY           saray.caceresf@unac.edu.co
+20231002090 CALIZ PEREZ ANDRES ESTIVEN     andrese.calizp@unac.edu.co
+20231031490 CALVO MEJIA VALERIA            valeria.calvom@unac.edu.co
+20241008190 CASTRO MUÑOZ JUAN PABLO        juanp.castrom@unac.edu.co
+20231030690 CONDE HANNER                   hanner.condeo@unac.edu.co
+20231030590 DIAZ MEZA VIVINEY              viviney.diazm@unac.edu.co
+20231015790 GUERRA GIRALDO DANIEL          daniel.guerrag@unac.edu.co
+20231014290 LUJAN SALGADO DEIVY DANIEL     deivyd.lujans@unac.edu.co
+20231006090 MEDINA CLAVIJO JUAN JOSE       juanj.medinac@unac.edu.co
+20231034890 MENDOZA PLATA YOLMAN SAID      yolmans.mendozap@unac.edu.co
+20231016990 MOLINA GOMEZ JOSE MANUEL       josem.molinag@unac.edu.co
+20231031690 MORA PARADA LUIS DAVID         luisd.morap@unac.edu.co
+20231036290 MUÑOZ CARVAJAL HENRY DANIEL    henryd.munozc@unac.edu.co
+20222024890 NAVAS LAGUNA DANIEL ESTEBAN    daniele.navasl@unac.edu.co
+20231019890 NIEVES LOPEZ NICOLL JAVIER     nicollj.nievesl@unac.edu.co
+20231040790 ORTEGA HERNANDEZ MIGUEL ANGEL  miguela.ortegah@unac.edu.co
+20232026190 ORTIZ DAVILA MANUEL SALVADOR   manuels.ortizd@unac.edu.co
+20231010890 ORTIZ MATEUS JESUS DAVID       jesusd.ortizm@unac.edu.co
+20231022890 PALLARES IBAÑEZ JUAN DAVID     juand.pallaresi@unac.edu.co
+20231039590 QUIÑONES TOBON JUAN PABLO      juanp.quinonest@unac.edu.co
+20231027890 ROJAS PEREZ KAROLL ESTEFANY    karolle.rojasp@unac.edu.co
+20231034190 ROJAS PUA MISHELLE DANIELA     mishelled.rojasp@unac.edu.co
+20231007290 RUIZ PERDOMO JUAN DAVID        juand.ruizp@unac.edu.co
+20231016890 SUCERQUIA RUIZ JUAN PABLO      juanp.sucerquiar@unac.edu.co
+20231024990 TORRES DIAZ LUZ IVETH          luzi.torresd@unac.edu.co
+20231023690 VEGA CACERES ELKIN DARIO       elkind.vegac@unac.edu.co
+20231020890 VELASCO CARLOSAMA JHON JADER   jhonj.velascoc@unac.edu.co
+20222024690 VILLEGAS CASTRILLON SANTIAGO   santiago.villegasc@unac.edu.co

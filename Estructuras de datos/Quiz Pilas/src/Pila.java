@@ -6,38 +6,35 @@ public class Pila {
         private int[] array;
         private int top;
 
-        public pila(int capacity) {
-            array = new int[capacity];
+        public pila(int capacidad) {
+            array = new int[capacidad];
             top = -1;
         }
 
-        public boolean isEmpty() {
+        public boolean vacia() {
             return top == -1;
         }
 
-        public boolean isFull() {
+        public boolean llena() {
             return top == array.length - 1;
         }
 
         public void push(int value) {
-            if (isFull()) {
-                System.out.println("pila Overflow");
-                return;
+            if (llena()) {
+                return ;
             }
             array[++top] = value;
         }
 
         public int pop() {
-            if (isEmpty()) {
-                System.out.println("pila Underflow");
+            if (vacia()) {
                 return -1;
             }
             return array[top--];
         }
 
         public int peek() {
-            if (isEmpty()) {
-                System.out.println("pila vacia");
+            if (vacia()) {
                 return -1;
             }
             return array[top];
@@ -50,7 +47,7 @@ public class Pila {
         System.out.println("Números de entrada:");
         mostrarPila(entrada);
         pila salida = ordenarPila(entrada);
-        System.out.println("Números ordenados de manera descendente:");
+        System.out.println("Números ordenados:");
         mostrarPila(salida);
     }
 
@@ -61,7 +58,7 @@ public class Pila {
 
         for (int i = 0; i < n; i++) {
             int num = random.nextInt(99) + 1;
-            pila.push(num);
+            pila.push(n3um);
         }
         return pila;
     }
@@ -69,9 +66,9 @@ public class Pila {
     private static pila ordenarPila(pila entrada) {
         pila salida = new pila(entrada.array.length);
 
-        while (!entrada.isEmpty()) {
+        while (!entrada.vacia()) {
             int temp = entrada.pop();
-            while (!salida.isEmpty() && salida.peek() < temp) {
+            while (!salida.vacia() && salida.peek() < temp) {
                 entrada.push(salida.pop());
             }
             salida.push(temp);
@@ -81,13 +78,13 @@ public class Pila {
 
     private static void mostrarPila(pila pila) {
         Pila.pila temp = new pila(pila.array.length);
-        while (!pila.isEmpty()) {
+        while (!pila.vacia()) {
             int num = pila.pop();
             System.out.print(num + " ");
             temp.push(num);
         }
         System.out.println();
-        while (!temp.isEmpty()) {
+        while (!temp.vacia()) {
             pila.push(temp.pop());
         }
     }

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ParcialFX.Controllers.ControllerMain">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="626.0" layoutX="-11.0" stroke="BLACK" strokeType="INSIDE" width="241.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.4901960790157318" blue="0.8235294222831726" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle fx:id="btnInicio" arcHeight="5.0" arcWidth="5.0" fill="#a1feff" height="38.0" layoutX="9.0" layoutY="254.0" onMouseClicked="#bienvenida" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="206.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a1feff" height="38.0" layoutX="9.0" layoutY="303.0" onMouseClicked="#estadisticas" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="206.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a1feff" height="38.0" layoutX="9.0" layoutY="353.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="206.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a1feff" height="38.0" layoutX="9.0" layoutY="405.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="206.0" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="32.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ETsafe.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="-1.0" layoutY="132.0" prefHeight="106.0" prefWidth="232.0" text="Sistema de información de enfermedades de trasmision sexual " textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" layoutX="85.0" layoutY="310.0" text="Enfermedades">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="85.0" layoutY="360.0" text="Ubicaciónes" textAlignment="CENTER">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="103.0" layoutY="255.0" prefHeight="38.0" prefWidth="39.0" text="Inicio" textAlignment="CENTER">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="108.0" layoutY="412.0" text="Foro" textAlignment="CENTER">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a1feff" height="38.0" layoutX="12.0" layoutY="541.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="206.0" />
+      <Label layoutX="79.0" layoutY="548.0" text="Cerrar sesión" textAlignment="CENTER">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="38.0" fitWidth="29.0" layoutX="32.0" layoutY="259.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/inicio.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="29.0" layoutX="32.0" layoutY="309.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/estadisticas.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="29.0" layoutX="32.0" layoutY="362.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/ubicaciones.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="29.0" layoutX="32.0" layoutY="409.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/foro.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="29.0" layoutX="32.0" layoutY="545.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/cerrar.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblBienvenida" alignment="CENTER" layoutX="251.0" layoutY="122.0" onMouseEntered="#bienvenida" prefHeight="268.0" prefWidth="321.0" wrapText="true">
+         <font>
+            <Font name="Agency FB" size="30.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="btnEstadisticas" arcHeight="5.0" arcWidth="5.0" fill="#a1feff" height="38.0" layoutX="9.0" layoutY="305.0" onMouseClicked="#estadisticas" opacity="0.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="206.0" />
+      <Rectangle fx:id="btnUbi" arcHeight="5.0" arcWidth="5.0" fill="#a1feff" height="38.0" layoutX="9.0" layoutY="353.0" onMouseClicked="#ubi" opacity="0.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="206.0" />
+      <Rectangle fx:id="btnForo" arcHeight="5.0" arcWidth="5.0" fill="#a1feff" height="38.0" layoutX="7.0" layoutY="405.0" onMouseClicked="#foro" opacity="0.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="206.0" />
+      <Rectangle fx:id="btnCerrar" arcHeight="5.0" arcWidth="5.0" fill="#a1feff" height="38.0" layoutX="12.0" layoutY="541.0" onMouseClicked="#cerrar" opacity="0.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="206.0" />
+   </children>
+</AnchorPane>

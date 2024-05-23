@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane onMouseEntered="#bienvenida" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.quiz.Controller.ControllerMain">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="132.0" layoutX="433.0" layoutY="112.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="415.0">
+         <effect>
+            <BoxBlur height="44.0" iterations="3" width="50.0" />
+         </effect>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="116.0" layoutX="433.0" layoutY="119.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="415.0" />
+      <Text layoutX="593.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Menú">
+         <font>
+            <Font name="Futura-Medium" size="40.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblTxt" alignment="TOP_CENTER" layoutX="497.0" layoutY="346.0" prefHeight="93.0" prefWidth="295.0" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Futura-Medium" size="20.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ecf6ff" height="40.0" layoutX="539.0" layoutY="568.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Rectangle>
+      <Text layoutX="597.0" layoutY="593.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cerrar sesión">
+         <font>
+            <Font name="Futura Light BT" size="15.0" />
+         </font>
+      </Text>
+      <Rectangle fx:id="btnCerrar" arcHeight="5.0" arcWidth="5.0" fill="#ecf6ff" height="40.0" layoutX="539.0" layoutY="568.0" onMouseClicked="#cerrar" opacity="0.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Rectangle>
+   </children>
+</AnchorPane>

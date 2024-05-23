@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane onMouseEntered="#bienvenida" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.quiz.Controller.ControllerLogin">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="485.0" layoutX="501.0" layoutY="118.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="279.0">
+         <effect>
+            <BoxBlur height="44.0" iterations="3" width="50.0" />
+         </effect>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="453.0" layoutX="516.0" layoutY="150.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="250.0" />
+      <Text layoutX="578.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOGIN">
+         <font>
+            <Font name="Futura-Medium" size="40.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblTxt" alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="565.0" layoutY="295.0" prefHeight="46.0" prefWidth="152.0" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Futura Light BT" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUsername" alignment="TOP_CENTER" layoutX="565.0" layoutY="351.0" promptText="username" />
+      <PasswordField fx:id="txtPassword" alignment="TOP_CENTER" layoutX="565.0" layoutY="402.0" prefHeight="26.0" prefWidth="152.0" promptText="password" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ecf6ff" height="35.0" layoutX="581.0" layoutY="461.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="120.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ecf6ff" height="35.0" layoutX="581.0" layoutY="502.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="120.0" />
+      <Text layoutX="607.0" layoutY="484.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INGRESAR">
+         <font>
+            <Font name="Futura Light BT" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="624.0" layoutY="526.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SALIR">
+         <font>
+            <Font name="Futura Light BT" size="15.0" />
+         </font>
+      </Text>
+      <Rectangle fx:id="btnIngresar" arcHeight="5.0" arcWidth="5.0" fill="#ecf6ff" height="35.0" layoutX="581.0" layoutY="461.0" onMouseClicked="#ingresar" opacity="0.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="120.0" />
+      <Rectangle fx:id="btnSalir" arcHeight="5.0" arcWidth="5.0" fill="#ecf6ff" height="35.0" layoutX="581.0" layoutY="503.0" onMouseClicked="#salir" opacity="0.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="120.0" />
+      <Text fx:id="txtRegistrar" layoutX="609.0" layoutY="563.0" onMouseClicked="#registrar" strokeType="OUTSIDE" strokeWidth="0.0" text="Registrarse">
+         <font>
+            <Font name="Futura Light BT" size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
